@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #265079;
+    color: white;
+    padding: 13px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #265079;
+}
+
+#fantasy-team {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.div-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-container > div {
+    width: 160px;
+    border-radius: 10px;
+    background-color: lightgray;
+    color: #265079;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 15px;
+    padding: 10px; 
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.div-container > div > div {
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+#player-search {
+    background-color: lightgray; 
+    width: 40%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    padding: 20px;
+}
+
+select, input, label {
+    width: 60%;
+    text-align: center; 
+}
+
+#points, #two-percent, #three-percent {
+    width: 100%;
+    margin: 0; 
+}
+
+#search-button {
+    background-color: rgb(77, 77, 160);
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+#search-button:hover {
+    background-color: darkblue; 
+}
+
+#players-table {
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: center; 
+}
+
+#players-table th, #players-table td {
+    padding: 10px; 
+    border: 1px solid white; 
+    text-align: center; 
+}
+
+#players-table > thead {
+    background-color: red; 
+    color: white; 
+    text-align: center; 
+}
+
+button {
+    background-color: rgb(77, 77, 160);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+    align-items: flex-start; 
+    background-color: #ddd; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.input-group h3 {
+    margin: 0 0 5px 0; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+.input-group input[type="range"] {
+    width: 100%; 
+    margin: 0; 
+}

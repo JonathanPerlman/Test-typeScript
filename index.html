@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA fantasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NBA FANTASY 2014-2024</h1>
+    </header>
+    
+    <section id="fantasy-team">
+        <h2>My Fantasy Team</h2>
+        <div class="div-container">
+            <div>Point Guard<div id="PG"></div></div>
+            <div>Shooting Guard<div id="SG"></div></div>
+            <div>Small Forward<div id="SF"></div></div>
+            <div>Power Forward<div id="PF"></div></div>
+            <div>Center<div id="C"></div></div>
+        </div>
+    </section>
+    
+    <h2>NBA Player Search</h2>
+    <section id="player-search">
+        <form id="search-form">
+            <label for="position">Position:</label>
+            <select id="position">
+                <option value="PG">PG</option>
+                <option value="SG">SG</option>
+                <option value="SF">SF</option>
+                <option value="PF">PF</option>
+                <option value="C">C</option>
+            </select>
+            
+            <div class="input-group">
+                <h3>Points:</h3>
+                <span class="input-label-points">Points:</span>
+                <input type="range" id="points" min="0" max="20000">
+            </div>
+            
+            <div class="input-group">
+                <h3>Two-percent</h3>
+                <span class="input-label-two-percent">2P%:</span>
+                <input type="range" id="two-percent" min="0" max="100">
+            </div>
+
+            
+            <div class="input-group">
+                <h3>Three-percent:</h3>
+
+                <span class="input-label-three-percent">3P%:</span>
+                <input type="range" id="three-percent" min="0" max="100">
+            </div>
+            
+            <button type="button" id="search-button">Search Player</button>
+        </form>
+        
+        <div id="player-results">
+            <table id="players-table">
+                <thead id="thead-table">
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Points</th>
+                        <th>FG%</th>
+                        <th>3P%</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
